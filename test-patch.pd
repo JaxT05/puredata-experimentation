@@ -1,0 +1,17 @@
+#N canvas 221 84 451 379 12;
+#X obj 57 65 osc~ 440;
+#X obj 56 251 dac~;
+#X floatatom 54 22 5 0 0 0 - - - 0;
+#X obj 57 214 *~ 0;
+#X msg 112 158 0;
+#X msg 156 157 1;
+#X text 105 22 the frequency;
+#X text 132 65 the sound generated;
+#X text 99 252 the output through the speaker;
+#X text 129 196 turns the sound on and off with a multiplier;
+#X connect 0 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 3 1;
+#X connect 5 0 3 1;
